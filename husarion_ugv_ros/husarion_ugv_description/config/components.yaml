@@ -1,12 +1,14 @@
 # By default Husarion UGV is loaded without any components.
 
-components: []
-# components:
-#   - type: LDR12
-#     parent_link: mount_link
-#     xyz: 0.1 0.0 0.0
-#     rpy: 0.0 0.0 0.0
-#     device_namespace: lidar
+# My robot configuration
+components:
+  - type: DEV02
+  
+  - type: LDR12
+    parent_link: mount_link
+    xyz: 0.1 0.0 0.0
+    rpy: 0.0 0.0 0.0
+    device_namespace: lidar
 
 # If you want to add for example DEV02, LDR06 and CAM01 to your robot look at the example below:
 
