@@ -3,10 +3,10 @@
 # My robot configuration
 components:
   - type: DEV02
-  
+
   - type: LDR12
     parent_link: mount_link
-    xyz: 0.1 0.0 0.0
+    xyz: 0.15 0.0 0.0
     rpy: 0.0 0.0 0.0
     device_namespace: lidar
 
