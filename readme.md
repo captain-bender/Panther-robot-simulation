@@ -24,7 +24,7 @@ ros2 launch husarion_ugv_gazebo simulation.launch.py
 ### To-do
 - <del>Integrate mesh instead of simple visual cylinder for the Ouster lidar
 - Add black zone to lidar DAE file using Blender
-- Add lidar bracker to Panther robot
+- <del>Add lidar bracker to Panther robot
 
 ### Environment
 - Ubuntu 22
