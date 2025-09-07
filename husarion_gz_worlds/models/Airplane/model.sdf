@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<sdf version='1.6'>
+  <model name="Airplane">
+    
+    <static>true</static>
+    
+    <link name="link">
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Airplane/meshes/airplane.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>0.7 0.7 0.7</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Airplane/meshes/textures/diffuse.jpg</albedo_map>
+              <normal_map>model://Airplane/meshes/textures/metal.jpg</normal_map>
+              <metalness_map>model://Airplane/meshes/textures/normal.jpg</metalness_map>
+              <roughness_map>model://Airplane/meshes/textures/rough.jpg</roughness_map>
+              <environment_map>model://Airplane/meshes/textures/rural_asphalt_road_1k.dds</environment_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      
+      <!--<visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Airplane/meshes/Airplane.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient> 0.6 0.6 0.7 1</ambient>
+          <diffuse> 0.6 0.6 0.7 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>-->
+
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Airplane/meshes/Airplane.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <bounce/>
+          <friction>
+            <ode/>
+          </friction>
+          <contact>
+            <ode/>
+          </contact>
+        </surface>
+      </collision>
+      
+    </link>    
+
+  </model> 
+</sdf>
