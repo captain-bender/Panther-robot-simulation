@@ -118,7 +118,15 @@ limitations under the License.
       <child link="${prefix}os_lidar" />
     </joint>
 
-    <link name="${prefix}os_lidar" />
+    <link name="${prefix}os_lidar">
+      <inertial>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+        <mass value="0.001" />
+        <inertia ixx="1e-6" ixy="0.0" ixz="0.0"
+                           iyy="1e-6" iyz="0.0"
+                                      izz="1e-6" />
+      </inertial>
+    </link>
 
     <gazebo reference="${prefix}os_lidar">
       <!-- gpu_lidar has to be set, CPU lidar doesn't work in ignition -
